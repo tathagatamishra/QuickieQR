@@ -1,0 +1,22 @@
+// Rule :
+// --- element name - property
+// start with three hyphen
+// name of element
+// property of the element
+// name & property separated by a single hyphen
+// easier to identify
+
+$---card-shadow: 0 0 10px rgba(0, 0, 0, 0.265);
+$---card-dark-shadow: 0 0 10px rgba(0, 0, 0, 0.600);
+$---dark-shadow-color: rgba(0, 0, 0, 0.600);
+
+$---card-dark-outline: solid 2px black;
+
+$---card-dark-bg: #21262d;
+
+$---text-dark-color: rgb(236,236,241);
+
+$---image-border-color: rgb(30, 30, 30);
+
+$---button-dark-bg: rgb(64,65,79);
+$---button-dark-border-color: rgb(78,79,96);

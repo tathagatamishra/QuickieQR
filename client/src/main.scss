@@ -1,0 +1,69 @@
+* {
+    outline: none;
+    box-sizing: border-box;
+
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1054.cur), auto !important;
+
+    &::selection {
+        color: #000000;
+        background: rgb(255, 200, 255);
+        text-shadow: none;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Open+Sans&display=swap');
+}
+
+// html,
+body {
+    height: fit-content;
+    margin: 0px;
+
+    overflow-x: hidden;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+
+    // background-color: rgb(32, 28, 43);
+    background: whitesmoke;
+    background-image: radial-gradient(white 2px, transparent 0%);
+    background-size: 15px 15px;
+    background-repeat: repeat;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 5px;
+        background: white;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: black;
+        border-top: solid 10px rgb(0, 230, 255);
+        border-bottom: solid 10px rgb(0, 230, 255);
+    }
+}
+
+.dark-mode {
+
+    height: fit-content;
+    margin: 0px;
+
+    overflow-x: hidden;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+
+    background: #484f58;
+    background-image: radial-gradient(#3f454d 2px, transparent 0%);
+    background-size: 15px 15px;
+    background-repeat: repeat;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 5px;
+      background: black;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: rgb(183, 185, 220);
+      border-top: solid 10px rgb(0, 230, 255);
+      border-bottom: solid 10px rgb(0, 230, 255);
+    }
+  }
