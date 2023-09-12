@@ -12,8 +12,10 @@
   "dependencies": {
     "@ionic/react": "^7.3.3",
     "ionicons": "^7.1.2",
+    "qrcode": "^1.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-qrcode-logo": "^2.9.0",
     "sass": "^1.66.1"
   },
   "devDependencies": {
