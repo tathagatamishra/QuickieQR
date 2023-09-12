@@ -18,7 +18,7 @@ export default function Output() {
           value={
             "https://github.com/tathagatamishra/QuickieQR"
           } // here you should keep the link/value(string) for which you are generation promocode
-          size={350} // the dimension of the QR code (number)
+          size={300} // the dimension of the QR code (number)
           logoImage="https://lh3.googleusercontent.com/a/ACg8ocKYJBPC1BQwGumIBMqxCXBhCSbriYcssP-9SzDx9wcW_jk=s360-c-no" // URL of the logo you want to use, make sure it is a dynamic url
           logoHeight={100}
           logoWidth={100}
