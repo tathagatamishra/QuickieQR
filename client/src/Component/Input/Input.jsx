@@ -9,8 +9,8 @@ export default function Input({ dataForParent }) {
 
   const [QRValue, setQRValue] = useState("");
   const [QRStyle, setQRStyle] = useState(false);
-  const [QRBG, setQRBG] = useState("#ffd6de");
-  const [QRFG, setQRFG] = useState("#ddffd6");
+  const [QRBG, setQRBG] = useState("#ffffff");
+  const [QRFG, setQRFG] = useState("#000000");
   const [QRImg, setQRImg] = useState(null);
   const [image, setImage] = useState(null);
 
