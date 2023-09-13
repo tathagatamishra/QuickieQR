@@ -13,11 +13,11 @@ import Action from "./Component/Action/Action";
 
 export default function App() {
 
-  const [childData, setChildData] = useState('');
+  const [outputData, setOutputData] = useState([]);
 
   // Callback function to receive data from the child component
-  const receiveDataFromChild = (data) => {
-    setChildData(data);
+  const receiveInputData = (data) => {
+    setOutputData(data);
   };
 
   return (
@@ -25,8 +25,8 @@ export default function App() {
       <div className="App">
         <Header />
         <div className="webBody">
-          <Input sendDataToParent={receiveDataFromChild} />
-          <Output dataFromParent={childData} />
+          <Input dataForParent={receiveInputData} />
+          <Output dataFromParent={outputData} />
           <Action />
         </div>
         <Footer />

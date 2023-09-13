@@ -1,6 +1,9 @@
+@import '../src/assets/variables';
+
 * {
     outline: none;
     box-sizing: border-box;
+    user-select: none;
 
     cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1054.cur), auto !important;
 
@@ -10,8 +13,8 @@
         text-shadow: none;
     }
 
-    @import url('https://fonts.googleapis.com/css2?family=Karla&family=Lilita+One&family=Open+Sans&display=swap');
 }
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Lilita+One&family=Open+Sans&display=swap');
 
 // html,
 body {
@@ -56,6 +59,8 @@ body {
     background-image: radial-gradient(#3f454d 2px, transparent 0%);
     background-size: 15px 15px;
     background-repeat: repeat;
+
+    color: $---text-dark-color;
 
     // transition: 100ms;
 

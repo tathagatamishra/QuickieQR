@@ -14,6 +14,7 @@
     & .logo {
         margin-left: 50px;
 
+        user-select: none;
         font-family: 'Lilita One', cursive;
         font-size: 30px;
 
@@ -22,6 +23,7 @@
             width: 120px;
             filter: invert(1);
             transform: rotate(-15deg) translate(-40px, 20px);
+            user-select: none;
         }
 
         & .logo-quick {
@@ -146,11 +148,13 @@
         font-family: 'Lilita One', cursive;
         font-size: 30px;
         color: rgb(235, 245, 255);
+        user-select: none;
 
         & .logo-q {
             position: absolute;
             width: 120px;
 
+            user-select: none;
             transform: rotate(-15deg) translate(-40px, 20px);
         }
 
