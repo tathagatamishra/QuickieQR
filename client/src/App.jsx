@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 
 import "./App.scss";
 
@@ -12,13 +12,21 @@ import { DarkModeProvider } from "./assets/DarkModeContext";
 import Action from "./Component/Action/Action";
 
 export default function App() {
+
+  const [childData, setChildData] = useState('');
+
+  // Callback function to receive data from the child component
+  const receiveDataFromChild = (data) => {
+    setChildData(data);
+  };
+
   return (
     <DarkModeProvider>
       <div className="App">
         <Header />
         <div className="webBody">
-          <Input />
-          <Output />
+          <Input sendDataToParent={receiveDataFromChild} />
+          <Output dataFromParent={childData} />
           <Action />
         </div>
         <Footer />

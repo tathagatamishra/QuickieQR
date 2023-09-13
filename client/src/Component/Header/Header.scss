@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
 
 .Header {
     width: 100%;
@@ -15,14 +15,24 @@
         margin-left: 50px;
 
         font-family: 'Lilita One', cursive;
-        font-size: 40px;
+        font-size: 30px;
+
+        & .logo-q {
+            position: absolute;
+            width: 120px;
+            filter: invert(1);
+            transform: rotate(-15deg) translate(-40px, 20px);
+        }
 
         & .logo-quick {
             margin: 0;
             position: absolute;
-            transform: rotate(-15deg) translate(-30px, 25px);
+            transform: rotate(-15deg) translate(60px, 48px);
             text-shadow: -4px 4px 0px rgb(255, 225, 0);
             // border: solid 2px rgb(0, 255, 0);
+
+            font-family: 'Borel', cursive;
+
         }
 
         & .logo-qr {
@@ -31,6 +41,9 @@
             transform: rotate(-15deg) translate(150px, 115px);
             text-shadow: -4px 4px 0px rgb(0, 255, 255);
             // border: solid 2px rgb(0, 204, 255);
+
+            font-family: 'Borel', cursive;
+
         }
     }
 
@@ -131,23 +144,36 @@
         margin-left: 50px;
 
         font-family: 'Lilita One', cursive;
-        font-size: 40px;
+        font-size: 30px;
         color: rgb(235, 245, 255);
+
+        & .logo-q {
+            position: absolute;
+            width: 120px;
+
+            transform: rotate(-15deg) translate(-40px, 20px);
+        }
 
         & .logo-quick {
             margin: 0;
             position: absolute;
-            transform: rotate(-15deg) translate(-30px, 25px);
-            text-shadow: -4px 4px 0px rgb(78, 0, 0);
+            transform: rotate(-15deg) translate(60px, 48px);
+            text-shadow: -4px 4px 0px rgb(216, 90, 90);
             // border: solid 2px rgb(0, 255, 0);
+
+            font-family: 'Borel', cursive;
+
         }
 
         & .logo-qr {
             margin: 0;
             position: absolute;
             transform: rotate(-15deg) translate(150px, 115px);
-            text-shadow: -4px 4px 0px rgb(0, 28, 88);
+            text-shadow: -4px 4px 0px rgb(90, 90, 216);
             // border: solid 2px rgb(0, 204, 255);
+
+            font-family: 'Borel', cursive;
+
         }
     }
 

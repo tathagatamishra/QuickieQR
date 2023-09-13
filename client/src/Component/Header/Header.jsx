@@ -12,7 +12,8 @@ export default function Header() {
   return (
     <div className={isDarkMode ? "dark-header" : "Header"}>
       <div className="logo">
-        <h1 className="logo-quick">Quickie</h1>
+        <img className="logo-q" src="Q.png" alt="logo" />
+        <h1 className="logo-quick">uickie</h1>
         <h1 className="logo-qr">QR</h1>
       </div>
       <div className="header-right">

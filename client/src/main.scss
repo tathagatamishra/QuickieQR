@@ -28,6 +28,8 @@ body {
     background-size: 15px 15px;
     background-repeat: repeat;
 
+    // transition: 100ms;
+
     &::-webkit-scrollbar {
         width: 6px;
         height: 5px;
@@ -54,6 +56,8 @@ body {
     background-image: radial-gradient(#3f454d 2px, transparent 0%);
     background-size: 15px 15px;
     background-repeat: repeat;
+
+    // transition: 100ms;
 
     &::-webkit-scrollbar {
       width: 6px;
