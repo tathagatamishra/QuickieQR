@@ -9,47 +9,35 @@ import { useDarkMode } from "../../assets/DarkModeContext";
 export default function Output({ dataFromParent }) {
   const { isDarkMode } = useDarkMode();
 
+  const defaultValue =
+    "Welcome to Quickie QR. Use contrasting colors. Do not over-customize your QR code. Thank you!";
+
   return (
     <div className={isDarkMode ? "dark-output" : "Output"}>
       <div className="qr-card">
         <QRCode
-          value={`${dataFromParent[0]}`}
+          value={dataFromParent[0] ? `${dataFromParent[0]}` : defaultValue}
           size={300} // the dimension of the QR code (number)
           logoImage={
-            dataFromParent[4]
-              ? `${URL.createObjectURL(dataFromParent[4])}`
+            dataFromParent[5]
+              ? `${URL.createObjectURL(dataFromParent[5])}`
               : "QQR.png"
           } // URL of the logo
           logoHeight={100}
           logoWidth={100}
           logoOpacity={1}
           ecLevel={"Q"}
-          // removeQrCodeBehindLogo={true}
-          // logoPadding={1}
-          // logoPaddingStyle={'circle'}
           bgColor={dataFromParent[2] ? `${dataFromParent[2]}` : "#ffffff"}
           fgColor={dataFromParent[3] ? `${dataFromParent[3]}` : "#000000"}
           enableCORS={true}
           qrStyle={dataFromParent[1] ? `${dataFromParent[1]}` : "dots"}
-          // eyeRadius={10} // radius of the promocode eye
-          eyeColor={[
-            {
-              // top/left eye
-              outer: "red",
-              inner: "black",
-            },
-            "blue", // top/right eye
-            "purple", // bottom/left eye
-          ]}
+          eyeColor={dataFromParent[4] ? `${dataFromParent[4]}` : "#000000"}
           eyeRadius={[
-            {
-              // top/left eye
-              outer: [10, 10, 0, 10],
-              inner: [50, 10, 10, 10],
-            },
+            [10, 10, 0, 10],
             [10, 10, 10, 0], // top/right eye
             [10, 0, 10, 10], // bottom/left
           ]}
+          // eyeRadius={10} // radius of the promocode eye
           id={"QR"}
         />
       </div>
