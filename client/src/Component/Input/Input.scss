@@ -9,7 +9,7 @@
     justify-content: flex-start;
 
     & .text-input {
-        width: 500px;
+        width: 100%;
         height: 45px;
         margin-bottom: 30px;
         outline: none;
@@ -28,12 +28,16 @@
     & .extra {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: space-between;
+        margin-bottom: 30px;
 
         & .group2 {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-end;
+            align-items: center;
+            // border: 1px solid red;
+            height: fit-content;
 
             & p {
                 margin: 0;
@@ -46,7 +50,7 @@
                 text-decoration: none;
                 text-transform: uppercase;
                 color: #000000;
-                width: 96px;
+                width: fit-content;
                 // border: 1px solid;
                 display: inline-block;
                 position: relative;
@@ -56,7 +60,7 @@
             & .bg-color {
                 width: 60px;
                 height: 45px;
-                margin-bottom: 30px;
+                // margin-bottom: 30px;
                 margin-left: 10px;
                 padding: 5px 8px;
                 outline: none;
@@ -70,7 +74,7 @@
             & .fg-color {
                 width: 60px;
                 height: 45px;
-                margin-bottom: 30px;
+                // margin-bottom: 30px;
                 margin-left: 10px;
                 padding: 5px 8px;
                 outline: none;
@@ -174,15 +178,15 @@
         & .file {
 
             transition: 300ms;
-            height: 50px;
-            width: 335px;
-            padding-right: 10px;
+            height: 45px;
+            width: 300px;
+            padding-right: 5px;
             float: right;
             position: relative;
 
             font-size: 15px;
             font-family: "Open Sans", sans-serif;
-            letter-spacing: 1px;
+            // letter-spacing: 0px;
             text-decoration: none;
             color: #000000;
 
@@ -199,17 +203,18 @@
             &::file-selector-button {
                 transition: 300ms;
 
-                margin-right: 10px;
+                margin-right: 5px;
                 height: 100%;
                 border: none;
                 background: whitesmoke;
                 border-right: 3px solid rgb(78, 78, 78);
-                padding: 0px 10px;
+                padding: 0px 5px;
+                border-radius: 5px;
 
-                font-size: 17px;
+                font-size: 15px;
                 font-weight: 600;
                 font-family: "Open Sans", sans-serif;
-                letter-spacing: 2px;
+                letter-spacing: 1px;
                 text-decoration: none;
                 text-transform: uppercase;
                 color: #000000;
@@ -228,7 +233,7 @@
 
         & button {
             transition: 300ms;
-            height: 50px;
+            height: 45px;
             width: fit-content;
             margin-left: 20px;
             margin-right: 5px;
@@ -237,10 +242,10 @@
             float: right;
             position: relative;
 
-            font-size: 17px;
+            font-size: 15px;
             font-weight: 600;
             font-family: "Open Sans", sans-serif;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             text-decoration: none;
             text-transform: uppercase;
             color: #000000;
@@ -273,7 +278,7 @@
     justify-content: flex-start;
 
     & .text-input {
-        width: 500px;
+        width: 100%;
         height: 45px;
         margin-bottom: 30px;
         outline: none;
@@ -295,13 +300,18 @@
         flex-direction: row;
         justify-content: space-between;
         // border: 1px solid red;
-
+        margin-bottom: 30px;
+        
         & .group2 {
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
+            align-items: center;
+            // border: 1px solid red;
+            height: fit-content;
 
             & p {
+                // height: fit-content;
                 margin: 0;
                 padding-right: 10px;
                 text-align: right;
@@ -312,7 +322,7 @@
                 text-decoration: none;
                 text-transform: uppercase;
                 color: $---text-dark-color;
-                width: 96px;
+                width: fit-content;
                 // border: 1px solid;
                 display: inline-block;
                 position: relative;
@@ -322,7 +332,7 @@
             & .bg-color {
                 width: 60px;
                 height: 45px;
-                margin-bottom: 30px;
+                // margin-bottom: 30px;
                 margin-left: 10px;
                 padding: 5px 8px;
                 outline: none;
@@ -336,7 +346,7 @@
             & .fg-color {
                 width: 60px;
                 height: 45px;
-                margin-bottom: 30px;
+                // margin-bottom: 30px;
                 margin-left: 10px;
                 padding: 5px 8px;
                 outline: none;
@@ -438,15 +448,15 @@
         & .file {
 
             transition: 300ms;
-            height: 50px;
-            width: 335px;
-            padding-right: 10px;
+            height: 45px;
+            width: 300px;
+            padding-right: 5px;
             float: right;
             position: relative;
 
             font-size: 15px;
             font-family: "Open Sans", sans-serif;
-            letter-spacing: 1px;
+            // letter-spacing: 1px;
             text-decoration: none;
             color: rgb(236, 236, 241);
 
@@ -463,18 +473,18 @@
             &::file-selector-button {
                 transition: 300ms;
 
-                margin-right: 10px;
+                margin-right: 5px;
                 height: 100%;
                 border: none;
                 background: rgb(78, 79, 96);
                 border-right: 3px solid #21262d;
-                padding: 0px 10px;
+                padding: 0px 5px;
                 border-radius: 5px;
 
-                font-size: 17px;
+                font-size: 15px;
                 font-weight: 600;
                 font-family: "Open Sans", sans-serif;
-                letter-spacing: 2px;
+                letter-spacing: 1px;
                 text-decoration: none;
                 text-transform: uppercase;
                 color: $---text-dark-color;
@@ -493,7 +503,7 @@
 
         & button {
             transition: 300ms;
-            height: 50px;
+            height: 45px;
             width: fit-content;
             margin-left: 20px;
             margin-right: 5px;
@@ -502,10 +512,10 @@
             float: right;
             position: relative;
 
-            font-size: 17px;
+            font-size: 15px;
             font-weight: 600;
             font-family: "Open Sans", sans-serif;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             text-decoration: none;
             text-transform: uppercase;
             color: rgb(236, 236, 241);

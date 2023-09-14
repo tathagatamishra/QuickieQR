@@ -81,7 +81,7 @@ export default function Input({ dataForParent }) {
           onChange={addQRImage}
         />
         <button type="submit" onClick={sendDataToParent}>
-          Generate
+        Double Click To Generate
         </button>
       </div>
     </div>

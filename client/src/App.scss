@@ -1,7 +1,8 @@
 @import './assets/variables';
 
 .App {
-  height: 100vh;
+  min-height: 100vh;
+  max-height: fit-content;
   box-sizing: border-box;
   // position: relative;
   padding: 0;
