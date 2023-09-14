@@ -7,10 +7,25 @@
 
 https://www.qr-code-generator.com/solutions/
 https://qrcode.meetheed.com/index.php
+https://www.qrcode-tiger.com/qr-code-not-working
 
 ## What can a QR Code do?
 
 Because of its versatility, a QR Code can be programmed to do a multitude of things. It can be split into two formats: Dynamic and Static. A Dynamic QR Code is useful for businesses or nonprofits in their marketing strategy because of its advantages. Though it needs a subscription to work, it is a small price to pay compared to the benefits it offers. Dynamic QR Code solutions are editable.
+
+## 12 reason why your QR code may not work?
+
+o The QR codes are inverted in colors
+o The codes do not have enough contrast
+o It is pixelated
+o The QR code is blurry
+o Printed the wrong size
+o Poor or wrong placement
+o This leads to a broken link
+o Is expired
+o Invalid QR code
+o Over-stylize
+o The QR code campaign has been disabled
 
 ## Does a QR Code Have To Be Black And White?
 

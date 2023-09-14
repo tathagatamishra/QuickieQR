@@ -12,29 +12,30 @@ export default function Input({ dataForParent }) {
   const [QRBG, setQRBG] = useState("#ffffff");
   const [QRFG, setQRFG] = useState("#000000");
   const [QRImg, setQRImg] = useState(null);
-  const [image, setImage] = useState(null);
-
+  
   const [inputArray, setInputArray] = useState([]);
-
+  
   const sendDataToParent = () => {
     setInputArray([QRValue, QRStyle, QRBG, QRFG, QRImg]);
-
+    
     dataForParent(inputArray);
   };
+  
+  // const [image, setImage] = useState(null);
+  // const addQRImage = (e) => {
+  //   setQRImg(e.target.files[0]);
 
-  const addQRImage = (e) => {
-    setQRImg(e.target.files[0]);
-
-    if (QRImg) {
-      setImage(URL.createObjectURL(QRImg));
-    }
-  };
+  //   if (QRImg) {
+  //     setImage(URL.createObjectURL(QRImg));
+  //   }
+  // };
 
   return (
     <div className={isDarkMode ? "dark-input" : "Input"}>
       <input
         className="text-input"
         type="text"
+        placeholder="Enter any text or link here"
         value={QRValue}
         onChange={(e) => setQRValue(e.target.value)}
       />
@@ -78,7 +79,7 @@ export default function Input({ dataForParent }) {
           className="file"
           type="file"
           accept="image/*"
-          onChange={addQRImage}
+          onChange={(e) => setQRImg(e.target.files[0])}
         />
         <button type="submit" onClick={sendDataToParent}>
         Double Click To Generate
