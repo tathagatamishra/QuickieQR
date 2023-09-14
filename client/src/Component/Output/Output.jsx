@@ -21,12 +21,12 @@ export default function Output({ dataFromParent }) {
           logoImage={
             dataFromParent[5]
               ? `${URL.createObjectURL(dataFromParent[5])}`
-              : "QQR.png"
+              : ""
           } // URL of the logo
           logoHeight={100}
           logoWidth={100}
           logoOpacity={1}
-          ecLevel={"Q"}
+          ecLevel={"H"}
           bgColor={dataFromParent[2] ? `${dataFromParent[2]}` : "#ffffff"}
           fgColor={dataFromParent[3] ? `${dataFromParent[3]}` : "#000000"}
           enableCORS={true}

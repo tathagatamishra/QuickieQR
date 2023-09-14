@@ -74,46 +74,44 @@ export default function Input({ dataForParent }) {
 
       <div className="qr-color">
         <p className="color-heading">
-          To modify the color of QR Code, click here & read the instruction
+          Before modifying the color of QR Code, read the instruction
         </p>
+
+        <div className="color-section">
+          <div className="color-group">
+            <p>{QRStyle ? "Squares" : "Dots"}</p>
+            <input
+              className="fg-color"
+              type="color"
+              value={QRFG}
+              onChange={(e) => setQRFG(e.target.value)}
+            />
+          </div>
+
+          <div className="color-group">
+            <p>Eyes</p>
+            <input
+              className="eye-color"
+              type="color"
+              value={QREye}
+              onChange={(e) => setQREye(e.target.value)}
+            />
+          </div>
+
+          <div className="color-group">
+            <p>Background</p>
+            <input
+              className="bg-color"
+              type="color"
+              value={QRBG}
+              onChange={(e) => setQRBG(e.target.value)}
+            />
+          </div>
+        </div>
 
         {isHidden && (
           <>
             <div className="hidden-section">
-              <div className="color-section">
-
-                <div className="color-group">
-                  <p>{QRStyle ? "Squares" : "Dots"}</p>
-                  <input
-                    className="fg-color"
-                    type="color"
-                    value={QRFG}
-                    onChange={(e) => setQRFG(e.target.value)}
-                  />
-                </div>
-
-                <div className="color-group">
-                  <p>Eyes</p>
-                  <input
-                    className="eye-color"
-                    type="color"
-                    value={QREye}
-                    onChange={(e) => setQREye(e.target.value)}
-                  />
-                </div>
-
-                <div className="color-group">
-                  <p>Background</p>
-                  <input
-                    className="bg-color"
-                    type="color"
-                    value={QRBG}
-                    onChange={(e) => setQRBG(e.target.value)}
-                  />
-                </div>
-
-              </div>
-
               <div className="instruction">
                 <h3>Use contrasting colors</h3>
                 <p>
