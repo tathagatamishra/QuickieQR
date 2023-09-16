@@ -273,6 +273,8 @@
             width: 550px;
             margin: 30px 0 0 0;
 
+            user-select: text;
+
             & .instruction {
                 border-top: 3px solid rgba(128, 128, 128, 0.121);
                 padding: 0 10px;
@@ -623,6 +625,8 @@
             // border: 1px solid red;
             width: 550px;
             margin: 30px 0 0 0;
+
+            user-select: text;
 
             & .instruction {
                 border-top: 3px solid rgba(128, 128, 128, 0.121);
