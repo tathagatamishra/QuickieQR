@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
 import { IonIcon } from "@ionic/react";
 import { sunnyOutline } from "ionicons/icons";

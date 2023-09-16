@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
 import "./Output.scss";
 
@@ -26,6 +25,7 @@ export default function Output({ dataFromParent }) {
           logoHeight={100}
           logoWidth={100}
           logoOpacity={1}
+          removeQrCodeBehindLogo={true}
           ecLevel={"H"}
           bgColor={dataFromParent[2] ? `${dataFromParent[2]}` : "#ffffff"}
           fgColor={dataFromParent[3] ? `${dataFromParent[3]}` : "#000000"}

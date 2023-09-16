@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-// DarkModeContext.js
 import { createContext, useContext, useState } from "react";
 
 const DarkModeContext = createContext();
