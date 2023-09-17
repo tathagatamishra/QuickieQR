@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Input.scss";
 import "./Action.scss";
 import { IonIcon } from "@ionic/react";
@@ -35,6 +35,8 @@ export default function Action() {
   const [QREye, setQREye] = useState("#000000");
   const [QRImg, setQRImg] = useState(null);
 
+  const [logoSize, setLogoSize] = useState(148);
+
   function hide() {
     if (isHidden) setIsHidden(false);
     else setIsHidden(true);
@@ -46,6 +48,27 @@ export default function Action() {
 
   const defaultValue =
     "Welcome to Quickie QR. Use contrasting colors. Do not over-customize your QR code. Thank you!";
+
+  useEffect(() => {
+    if (QRValue.length / 7 == 0) {
+    }
+
+    if (QRValue.length > 0 && QRValue.length < 8) {
+      setLogoSize(95);
+    } else if (QRValue.length > 7 && QRValue.length < 15) {
+      setLogoSize(138);
+    } else if (QRValue.length > 14 && QRValue.length < 22) {
+      setLogoSize(170);
+    } else if (QRValue.length > 21 && QRValue.length < 29) {
+      setLogoSize(148);
+    } else if (QRValue.length > 28 && QRValue.length < 36) {
+      setLogoSize(172);
+    } else if (QRValue.length > 35 && QRValue.length < 43) {
+      setLogoSize(172);
+    } else if (QRValue.length > 42 && QRValue.length < 50) {
+      setLogoSize(155);
+    }
+  }, [QRValue]);
 
   {
     /* --------------------------------------------------------------- */
@@ -67,7 +90,7 @@ export default function Action() {
   };
 
   {
-    /* --------------------------------------------------------------- */
+    /* --------------------------------------------------------------- */ 1;
   }
 
   return (
@@ -93,6 +116,13 @@ export default function Action() {
             />
             <label htmlFor="checkbox"></label>
           </div>
+
+          <input
+            className="number"
+            type="number"
+            value={logoSize}
+            onChange={(e) => setLogoSize(e.target.value)}
+          />
 
           <input
             className="file"
@@ -179,39 +209,43 @@ export default function Action() {
           </div>
         </div>
 
-        <div className="btn">
-          <button type="submit" onClick={() => downloadCode()}>Download Your QR Code</button>
-        </div>
+        {/* <div className="btn">
+          <button type="submit" onClick={() => downloadCode()}>
+            Download Your QR Code
+          </button>
+        </div> */}
       </div>
 
       {/* --------------------------------------------------------------- */}
 
       <div className={isDarkMode ? "dark-output" : "Output"}>
+        <p>
+          {QRValue.length} || {logoSize}
+        </p>
         <div className="qr-card">
           <QRCode
-            value={QRValue ? `${QRValue}` : defaultValue}
-            size={300} // the dimension of the QR code (number)
-            logoImage={
-              QRImg
-                ? `${URL.createObjectURL(QRImg)}`
-                : ""
-            } // URL of the logo
-            logoHeight={100}
-            logoWidth={100}
-            logoOpacity={1}
-            removeQrCodeBehindLogo={true}
+            value={QRValue ? QRValue : defaultValue}
+            size={720} // QR code dimension
+            quietZone={50}
             ecLevel={"H"}
-            bgColor={QRBG ? `${QRBG}` : "#ffffff"}
-            fgColor={QRFG ? `${QRFG}` : "#000000"}
-            enableCORS={true}
-            qrStyle={QRStyle ? `${QRStyle}` : "dots"}
-            eyeColor={QREye ? `${QREye}` : "#000000"}
+            qrStyle={QRStyle ? QRStyle : "dots"}
+            logoOpacity={1}
+            logoWidth={logoSize}
+            logoHeight={logoSize}
+            // logoPadding={2}
+            // logoPaddingStyle={'circle'}
+            // removeQrCodeBehindLogo={true}
+            logoImage={QRImg ? URL.createObjectURL(QRImg) : "test2.png"} // URL of the logo
+            bgColor={QRBG ? QRBG : "#ffffff"}
+            fgColor={QRFG ? QRFG : "#000000"}
+            eyeColor={QREye ? QREye : "#000000"}
             eyeRadius={[
               [10, 10, 0, 10],
               [10, 10, 10, 0], // top/right eye
               [10, 0, 10, 10], // bottom/left
             ]}
             // eyeRadius={10} // radius of the promocode eye
+            enableCORS={true}
             id={"QR"}
           />
         </div>

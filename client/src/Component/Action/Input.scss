@@ -110,9 +110,32 @@
             }
         }
 
+        & .number {
+            height: 45px;
+            width: 100px;
+            padding-right: 10px;
+            float: right;
+            position: relative;
+
+            font-size: 15px;
+            font-weight: 600;
+            font-family: "Open Sans", sans-serif;
+            letter-spacing: 1px;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            color: #000000;
+
+            outline: none;
+            border-radius: 5px;
+            border: 3px solid rgb(98, 98, 102);
+            background-color: white;
+            box-shadow: $---card-shadow;
+        }
+
         & .file {
-            height: 50px;
-            width: 400px;
+            height: 45px;
+            width: 300px;
             padding-right: 10px;
             float: right;
             position: relative;
@@ -463,9 +486,32 @@
             }
         }
 
+        & .number {
+            height: 45px;
+            width: 100px;
+            padding-right: 10px;
+            float: right;
+            position: relative;
+
+            font-size: 15px;
+            font-weight: 600;
+            font-family: "Open Sans", sans-serif;
+            letter-spacing: 1px;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            color: $---text-dark-color;
+
+            outline: none;
+            border-radius: 5px;
+            border: 3px solid rgb(78, 79, 96);
+            background-color: rgb(64, 65, 79);
+            box-shadow: $---card-dark-shadow;
+        }
+
         & .file {
-            height: 50px;
-            width: 400px;
+            height: 45px;
+            width: 300px;
             padding-right: 10px;
             float: right;
             position: relative;

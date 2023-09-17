@@ -8,7 +8,13 @@
     align-items: center;
     // border: solid 1px rgb(0, 34, 255);
 
+    & p {
+        margin: 0;
+        height: 0;
+     }
+
     & .qr-card {
+        padding: 30px;
         height: 380px;
         width: 380px;
         margin: 50px;
@@ -23,10 +29,11 @@
         border-radius: 10px;
         object-fit: cover;
 
-        & img {
-            outline: solid 20px white;
-            border-radius: 5px;
-            height: 250px;
+        & #QR {
+            outline: solid 4px rgb(247, 248, 249);
+            border-radius: 8px;
+            width: 100% !important;
+            height: 100% !important;
             user-select: none;
             margin: auto;
             transition: 300ms;
@@ -42,10 +49,15 @@
     justify-content: center;
     align-items: center;
     // border: solid 1px rgb(0, 34, 255);
+     & p {
+        margin: 0;
+        height: 0;
+     }
 
     & .qr-card {
-        height: 380px;
-        width: 380px;
+        padding: 30px;
+        // height: 380px;
+        // width: 380px;
         margin: 50px;
         border: $---card-dark-outline;
         background-color: $---card-dark-bg;
@@ -59,10 +71,11 @@
         border-radius: 10px;
         object-fit: cover;
 
-        & img {
-            outline: solid 20px white;
+        & #QR {
+            outline: solid 4px rgba(255, 255, 255, 0.058);
             border-radius: 5px;
-            height: 250px;
+            width: 100% !important;
+            height: 100% !important;
             user-select: none;
             margin: auto;
             transition: 300ms;
