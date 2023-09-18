@@ -36,6 +36,7 @@ export default function Action() {
   const [QRImg, setQRImg] = useState(null);
 
   const [logoSize, setLogoSize] = useState(148);
+  const [testStyle, setTestStyle] = useState({});
 
   function hide() {
     if (isHidden) setIsHidden(false);
@@ -68,6 +69,11 @@ export default function Action() {
     } else if (QRValue.length > 42 && QRValue.length < 50) {
       setLogoSize(155);
     }
+
+    setTestStyle({
+      width: `${100}%`,
+      background: "wheat",
+    });
   }, [QRValue]);
 
   {
@@ -90,7 +96,7 @@ export default function Action() {
   };
 
   {
-    /* --------------------------------------------------------------- */ 1;
+    /* --------------------------------------------------------------- */
   }
 
   return (
@@ -226,7 +232,8 @@ export default function Action() {
           <QRCode
             value={QRValue ? QRValue : defaultValue}
             size={720} // QR code dimension
-            quietZone={50}
+            // quietZone={50}
+            quietZone={0}
             ecLevel={"H"}
             qrStyle={QRStyle ? QRStyle : "dots"}
             logoOpacity={1}
@@ -248,6 +255,9 @@ export default function Action() {
             enableCORS={true}
             id={"QR"}
           />
+          <div className="test" style={testStyle}>
+            z
+          </div>
         </div>
       </div>
 

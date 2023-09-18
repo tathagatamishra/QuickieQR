@@ -22,7 +22,7 @@
         box-shadow: $---card-shadow;
 
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
@@ -64,7 +64,7 @@
         box-shadow: $---card-dark-shadow;
 
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
@@ -72,10 +72,10 @@
         object-fit: cover;
 
         & #QR {
-            outline: solid 4px rgba(255, 255, 255, 0.058);
+            // outline: solid 4px rgba(255, 255, 255, 0.058);
             border-radius: 5px;
-            width: 100% !important;
-            height: 100% !important;
+            // width: 100% !important;
+            // height: 100% !important;
             user-select: none;
             margin: auto;
             transition: 300ms;
