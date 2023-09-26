@@ -123,12 +123,12 @@ export default function Action() {
             <label htmlFor="checkbox"></label>
           </div>
 
-          <input
+          {/* <input
             className="number"
             type="number"
             value={logoSize}
             onChange={(e) => setLogoSize(e.target.value)}
-          />
+          /> */}
 
           <input
             className="file"
@@ -225,9 +225,9 @@ export default function Action() {
       {/* --------------------------------------------------------------- */}
 
       <div className={isDarkMode ? "dark-output" : "Output"}>
-        <p>
+        {/* <p>
           {QRValue.length} || {logoSize}
-        </p>
+        </p> */}
         <div className="qr-card">
           <QRCode
             value={QRValue ? QRValue : defaultValue}
@@ -242,7 +242,7 @@ export default function Action() {
             // logoPadding={2}
             // logoPaddingStyle={'circle'}
             // removeQrCodeBehindLogo={true}
-            logoImage={QRImg ? URL.createObjectURL(QRImg) : "test2.png"} // URL of the logo
+            logoImage={QRImg ? URL.createObjectURL(QRImg) : ""} // URL of the logo
             bgColor={QRBG ? QRBG : "#ffffff"}
             fgColor={QRFG ? QRFG : "#000000"}
             eyeColor={QREye ? QREye : "#000000"}
@@ -255,9 +255,9 @@ export default function Action() {
             enableCORS={true}
             id={"QR"}
           />
-          <div className="test" style={testStyle}>
+          {/* <div className="test" style={testStyle}>
             z
-          </div>
+          </div> */}
         </div>
       </div>
 
