@@ -232,8 +232,8 @@ export default function Action() {
           <QRCode
             value={QRValue ? QRValue : defaultValue}
             size={720} // QR code dimension
-            // quietZone={50}
-            quietZone={0}
+            quietZone={50}
+            // quietZone={0}
             ecLevel={"H"}
             qrStyle={QRStyle ? QRStyle : "dots"}
             logoOpacity={1}

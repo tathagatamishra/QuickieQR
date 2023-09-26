@@ -57,9 +57,10 @@
 
     & .qr-card {
         padding: 30px;
-        // height: 380px;
-        // width: 380px;
+        height: 380px;
+        width: 380px;
         margin: 50px;
+        margin-top: 10px;
         border: $---card-dark-outline;
         background-color: $---card-dark-bg;
         box-shadow: $---card-dark-shadow;
@@ -75,8 +76,8 @@
         & #QR {
             // outline: solid 4px rgba(255, 255, 255, 0.058);
             border-radius: 5px;
-            // width: 100% !important;
-            // height: 100% !important;
+            width: 100% !important;
+            height: 100% !important;
             user-select: none;
             margin: auto;
             transition: 300ms;
